@@ -28,12 +28,13 @@
           />
         </div>
        
-        <button class="btn btn-primary" @click="login">
-          Iniciar sesión
-        </button>
-        <button class="btn btn-primary" @click="register">
+        <v-btn class="btn btn-primary" @click="login" >
+        <nuxt-link to="/upDateWork"></nuxt-link>
+        Iniciar sesión  
+        </v-btn>
+        <v-btn class="btn btn-primary" @click="register">
           Registrar
-        </button>
+        </v-btn>
         <p v-if="error" class="error">{{errorMessage}}</p>
       </div>
     </div>
@@ -57,6 +58,7 @@ export default {
             errorMessage:"",
             auth:null,
             isLoggedIn: false,
+           
 
 
         }
